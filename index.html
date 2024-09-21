@@ -6,6 +6,7 @@
     <title>Balaji Duraisamy - QA Engineer Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Basic reset for body */
         body {
@@ -101,6 +102,7 @@
             transition: transform 0.3s, box-shadow 0.3s;
             margin-bottom: 30px;
             background-color: #fff;
+            cursor: pointer; /* Change cursor to pointer */
         }
 
         .card:hover {
@@ -115,6 +117,25 @@
             background-color: #343a40;
             color: white;
             text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                height: auto;
+                width: 100%;
+            }
+            .sidebar.collapsed {
+                width: 100%;
+            }
+            .content {
+                margin-left: 0;
+            }
+            .toggle-btn {
+                left: auto;
+                right: 20px;
+            }
         }
     </style>
 </head>
@@ -146,25 +167,25 @@
     <!-- Summary Section -->
     <section id="summary">
         <h2>Professional Summary</h2>
-        <p>Result-oriented QA Engineer with 3+ years of experience in manual and automation testing. Proficient in
-            conducting regression and functional tests, enhancing test coverage, and optimizing processes using tools like
-            Robot Framework and Playwright. Expertise in API testing, issue resolution, and test script development,
-            improving quality assurance practices and ensuring high-quality deliverables through testing and analysis.</p>
+        <p>Result-oriented QA Engineer with 3+ years of experience in manual and automation testing...</p>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
         <h2>Experience</h2>
+
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title" data-toggle="collapse" data-target="#qaEngineer">QA Engineer: Span Technology Services</h5>
+                <h5 class="card-title" data-toggle="collapse" data-target="#qaEngineer">
+                    QA Engineer: Span Technology Services <i ></i>
+                </h5>
                 <div id="qaEngineer" class="collapse">
                     <ul>
-                        <li>Conducted 200+ manual regression and functional test suites, upholding a high standard of product quality with a 95% defect detection rate</li>
-                        <li>Applied knowledge in SDLC, STLC, and Agile methodologies, refining testing processes, increasing overall project efficiency through optimized practices</li>
-                        <li>Implemented manual and automated testing strategies using Robot Framework, enhancing test coverage and reducing bug detection time by 30%</li>
-                        <li>Employed Playwright with JavaScript for initial automation tasks, contributing to the automation of 10+ test cases and gaining foundational experience</li>
-                        <li>Examined issues/defects by understanding application flow and analyzing backend and UI logs, addressing 80% of issues within 48 hours</li>
+                        <li>Conducted 200+ manual regression and functional test suites, upholding a high standard of product quality with a 95% defect detection rate.</li>
+                        <li>Applied knowledge in SDLC, STLC, and Agile methodologies, refining testing processes, increasing overall project efficiency through optimized practices.</li>
+                        <li>Implemented manual and automated testing strategies using Robot Framework, enhancing test coverage and reducing bug detection time by 30%.</li>
+                        <li>Employed Playwright with JavaScript for initial automation tasks, contributing to the automation of 10+ test cases and gaining foundational experience.</li>
+                        <li>Examined issues/defects by understanding application flow and analyzing backend and UI logs, addressing 80% of issues within 48 hours.</li>
                     </ul>
                 </div>
             </div>
@@ -172,14 +193,16 @@
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title" data-toggle="collapse" data-target="#juniorQAEngineer">Junior QA Engineer: Span Technology Services Private Limited</h5>
+                <h5 class="card-title" data-toggle="collapse" data-target="#juniorQAEngineer">
+                    Junior QA Engineer: Span Technology Services Private Limited <i ></i>
+                </h5>
                 <div id="juniorQAEngineer" class="collapse">
                     <ul>
-                        <li>Performed manual and automation testing for 15 products, ensuring 98% high-quality deliverables and identifying issues before release</li>
-                        <li>Applied Postman for API testing, confirming functionality and reliability of web services and maintaining consistent performance across endpoints</li>
-                        <li>Employed Redmine and Jira for issue tracking and project management, reducing issue resolution time by 30% and enhancing team productivity</li>
-                        <li>Designed and implemented 50 scripted test cases using Robot Framework, reducing manual testing efforts by 40% and improving quality assurance</li>
-                        <li>Initiated exploration of Playwright JavaScript to broaden automation testing capabilities, targeting a 20% increase in test coverage and efficiency</li>
+                        <li>Performed manual and automation testing for 15 products, ensuring 98% high-quality deliverables and identifying issues before release.</li>
+                        <li>Applied Postman for API testing, confirming functionality and reliability of web services and maintaining consistent performance across endpoints.</li>
+                        <li>Employed Redmine and Jira for issue tracking and project management, reducing issue resolution time by 30% and enhancing team productivity.</li>
+                        <li>Designed and implemented 50 scripted test cases using Robot Framework, reducing manual testing efforts by 40% and improving quality assurance.</li>
+                        <li>Initiated exploration of Playwright JavaScript to broaden automation testing capabilities, targeting a 20% increase in test coverage and efficiency.</li>
                     </ul>
                 </div>
             </div>
@@ -187,16 +210,19 @@
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title" data-toggle="collapse" data-target="#juniorQATrainee">Junior QA Engineer Trainee: Span Technology Services Private Limited</h5>
+                <h5 class="card-title" data-toggle="collapse" data-target="#juniorQATrainee">
+                    Junior QA Engineer Trainee: Span Technology Services Private Limited <i ></i>
+                </h5>
                 <div id="juniorQATrainee" class="collapse">
                     <ul>
-                        <li>Executed manual testing of 50+ web applications, uncovering and documenting 200+ bugs, enhancing product quality by 30%</li>
-                        <li>Performed API testing on 75+ endpoints, validating 98% precise communication between web services</li>
-                        <li>Facilitated the development of 20 test plans and 100+ test cases, contributing to thorough testing documentation and improved test coverage</li>
+                        <li>Executed manual testing of 50+ web applications, uncovering and documenting 200+ bugs, enhancing product quality by 30%.</li>
+                        <li>Performed API testing on 75+ endpoints, validating 98% precise communication between web services.</li>
+                        <li>Facilitated the development of 20 test plans and 100+ test cases, contributing to thorough testing documentation and improved test coverage.</li>
                     </ul>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Skills Section Triggered by SweetAlert2 -->
@@ -205,16 +231,18 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
+
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title" data-toggle="collapse" data-target="#taxBandits1099">TaxBandits 1099/W2</h5>
-                <div id="taxBandits1099" class="collapse">
-                    <p><strong>Jan 2024 – Present</strong></p>
+                <h5 class="card-title" data-toggle="collapse" data-target="#taxBandits1099W2">
+                    TaxBandits 1099/W2 (Jan 2024 – Present) <i ></i>
+                </h5>
+                <div id="taxBandits1099W2" class="collapse">
                     <ul>
-                        <li>Developed 50+ automated test scripts for form preparation, submission, and recipient management functionalities, increasing testing efficiency by 40%</li>
-                        <li>Evaluated user interfaces for 1099 and W-2 form preparation modules on 10+ devices and browsers, ensuring 100% usability and accuracy</li>
-                        <li>Verified the functionality of electronic filing processes, including the submission of forms to the IRS and receipt of confirmation receipts, achieving 100% successful submissions</li>
-                        <li>Ensured proper integration with IRS e-filing systems and other TaxBandits services, leading to 95% fewer integration-related issues</li>
+                        <li>Developed 50+ automated test scripts for form preparation, submission, and recipient management functionalities, increasing testing efficiency by 40%.</li>
+                        <li>Evaluated user interfaces for 1099 and W-2 form preparation modules on 10+ devices and browsers, ensuring 100% usability and accuracy.</li>
+                        <li>Verified the functionality of electronic filing processes, including the submission of forms to the IRS and receipt of confirmation receipts, achieving 100% successful submissions.</li>
+                        <li>Ensured proper integration with IRS e-filing systems and other TaxBandits services, leading to 95% fewer integration-related issues.</li>
                     </ul>
                 </div>
             </div>
@@ -222,14 +250,15 @@
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title" data-toggle="collapse" data-target="#taxBanditsW9">TaxBandits W-9</h5>
+                <h5 class="card-title" data-toggle="collapse" data-target="#taxBanditsW9">
+                    TaxBandits W-9 (Nov 2022 – Jan 2024) <i ></i>
+                </h5>
                 <div id="taxBanditsW9" class="collapse">
-                    <p><strong>Nov 2022 – Jan 2024</strong></p>
                     <ul>
-                        <li>Designed and executed over 40 test cases for the creation, submission, and management of W-9 forms, achieving 100% accuracy and compliance with IRS requirements</li>
-                        <li>Tested user interface across 5 major browsers & 3 devices, enhancing form completion ease & correctness</li>
-                        <li>Verified integration with 3 TaxBandits services, including W-9 data handling in conjunction with tax form filing, ensuring seamless data flow and accuracy</li>
-                        <li>Identified and documented 15 bugs or inconsistencies in form submission and management processes, leading to a 25% reduction in reported issues</li>
+                        <li>Designed and executed over 40 test cases for the creation, submission, and management of W-9 forms, achieving 100% accuracy and compliance with IRS requirements.</li>
+                        <li>Tested user interface across 5 major browsers & 3 devices, enhancing form completion ease & correctness.</li>
+                        <li>Verified integration with 3 TaxBandits services, including W-9 data handling in conjunction with tax form filing, ensuring seamless data flow and accuracy.</li>
+                        <li>Identified and documented 15 bugs or inconsistencies in form submission and management processes, leading to a 25% reduction in reported issues.</li>
                     </ul>
                 </div>
             </div>
@@ -237,13 +266,14 @@
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title" data-toggle="collapse" data-target="#taxBanditsAPI">TaxBandits Public API</h5>
+                <h5 class="card-title" data-toggle="collapse" data-target="#taxBanditsAPI">
+                    TaxBandits Public API (Mar 2021 – Jan 2024) <i ></i>
+                </h5>
                 <div id="taxBanditsAPI" class="collapse">
-                    <p><strong>Mar 2021 – Jan 2024</strong></p>
                     <ul>
-                        <li>Developed 50+ test cases for TaxBandits API endpoints, including tax form creation, submission, and retrieval, ensuring 98% functional accuracy</li>
-                        <li>Reviewed and updated API documentation based on testing results and changes, improving clarity and accuracy in 100+ documentation revisions</li>
-                        <li>Tested the integration of the TaxBandits API with 5 third-party systems, ensuring data exchange and a 99% success rate in data transfer</li>
+                        <li>Developed 50+ test cases for TaxBandits API endpoints, including tax form creation, submission, and retrieval, ensuring 98% functional accuracy.</li>
+                        <li>Reviewed and updated API documentation based on testing results and changes, improving clarity and accuracy in 100+ documentation revisions.</li>
+                        <li>Tested the integration of the TaxBandits API with 5 third-party systems, ensuring data exchange and a 99% success rate in data transfer.</li>
                     </ul>
                 </div>
             </div>
@@ -253,60 +283,40 @@
     <!-- Education Section -->
     <section id="education">
         <h2>Education</h2>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title" data-toggle="collapse" data-target="#educationDetails">PSG College of Arts and Science</h5>
-                <div id="educationDetails" class="collapse">
-                    <p><strong>Master of Computer Application</strong></p>
-                </div>
-            </div>
-        </div>
+        <p>Bachelor of Engineering in Electronics and Communication Engineering - XYZ University</p>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Balaji Duraisamy. All rights reserved.</p>
+        <p>Balaji Duraisamy © 2024</p>
     </footer>
 </div>
 
-<!-- Scripts for functionality -->
+<!-- Bootstrap JS and SweetAlert2 -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 <script>
-    // Sidebar Toggle Functionality
-    const sidebar = document.querySelector('.sidebar');
-    const toggleBtn = document.getElementById('toggleSidebarBtn');
-    const content = document.querySelector('.content');
-
-    toggleBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('collapsed');
-        content.classList.toggle('collapsed');
+    document.getElementById('toggleSidebarBtn').addEventListener('click', function() {
+        document.querySelector('.sidebar').classList.toggle('collapsed');
     });
 
-    // Enhanced Skills Modal with SweetAlert2
-    document.getElementById('skillsBtn').addEventListener('click', function(event) {
-        event.preventDefault();
+    document.getElementById('skillsBtn').addEventListener('click', function() {
         Swal.fire({
-            title: 'Key Skills',
+            title: 'Skills',
             html: `
-                <ul style="text-align: left;">
-                    <li>API Testing (Postman)</li>
-                    <li>Automation Testing (Robot Framework, Playwright)</li>
-                    <li>Python & JavaScript</li>
-                    <li>Jira & Redmine</li>
-                </ul>
-            `,
-            showCloseButton: true,
-            showConfirmButton: false,
-            backdrop: true,
-            customClass: {
-                popup: 'animate__animated animate__fadeInDown'
-            }
+            <ul style='text-align:left;'>
+                <li>Manual Testing</li>
+                <li>Automation Testing - Robot Framework</li>
+                <li>API Testing - Postman</li>
+                <li>Web Testing</li>
+                <li>Mobile Testing</li>
+                <li>Playwright (JavaScript)</li>
+                <li>Test Case Design and Execution</li>
+            </ul>`,
+            confirmButtonText: 'Close'
         });
     });
 </script>
-
 </body>
 </html>
