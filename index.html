@@ -6,7 +6,7 @@
     <title>Balaji Duraisamy - QA Engineer Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Basic reset for body */
         body {
@@ -94,7 +94,27 @@
 
         /* Header styling */
         header {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+        font-size: 36px; /* Font size for h1 */
+        }
+
+        header p {
+            font-size: 14px; /* Font size for paragraph */
+        }
+
+        section h2 {
+            font-size: 20px; /* Font size for h2 */
+        }
+
+        .card-title {
+            font-size:19px; /* Font size for card titles */
+        }
+
+        footer {
+            font-size: 10px; /* Font size for footer text */
         }
 
         /* Card styling */
@@ -167,17 +187,19 @@
     <!-- Summary Section -->
     <section id="summary">
         <h2>Professional Summary</h2>
-        <p>Result-oriented QA Engineer with 3+ years of experience in manual and automation testing...</p>
+        <p>Result-oriented QA Engineer with 3+ years of experience in manual and automation testing. Proficient in
+            conducting regression and functional tests, enhancing test coverage, and optimizing processes using tools like
+            Robot Framework and Playwright. Expertise in API testing, issue resolution, and test script development,
+            improving quality assurance practices and ensuring high-quality deliverables through testing and analysis.</p>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
-        <h2>Experience</h2>
-
+        <h2>Experience On Span Technology Services Private Limited</h2>
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title" data-toggle="collapse" data-target="#qaEngineer">
-                    QA Engineer: Span Technology Services <i ></i>
+                    QA Engineer<i ></i>
                 </h5>
                 <div id="qaEngineer" class="collapse">
                     <ul>
@@ -194,7 +216,7 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title" data-toggle="collapse" data-target="#juniorQAEngineer">
-                    Junior QA Engineer: Span Technology Services Private Limited <i ></i>
+                    Junior QA Engineer<i ></i>
                 </h5>
                 <div id="juniorQAEngineer" class="collapse">
                     <ul>
@@ -211,7 +233,7 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title" data-toggle="collapse" data-target="#juniorQATrainee">
-                    Junior QA Engineer Trainee: Span Technology Services Private Limited <i ></i>
+                    Junior QA Engineer Trainee<i ></i>
                 </h5>
                 <div id="juniorQATrainee" class="collapse">
                     <ul>
@@ -222,7 +244,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Skills Section Triggered by SweetAlert2 -->
@@ -231,7 +252,6 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title" data-toggle="collapse" data-target="#taxBandits1099W2">
@@ -280,17 +300,26 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor of Engineering in Electronics and Communication Engineering - XYZ University</p>
-    </section>
+    <!-- Education Section in Accordion -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title" data-toggle="collapse" data-target="#collapseEducation">
+                Education Details
+            </h5>
+            <div id="collapseEducation" class="collapse">
+                <div class="card-body">
+                    <p><strong>PSG College of Arts and Science (Jun 2017 – May 2019)</strong><br>
+                    Master of Computer Application</p>
+                    <p><strong>SNR and Sons College Arts and Science (Jul 2014 – May 2017)</strong><br>
+                    Bachelor of Science in Information Technology</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Balaji Duraisamy © 2024</p>
-    </footer>
-</div>
 
 <!-- Bootstrap JS and SweetAlert2 -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
