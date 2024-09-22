@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of [Your Name], specializing in [Your Specialization].">
+    <meta name="keywords" content="portfolio, [your specialization], projects">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Card hover effect */
+        .card:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Modal header styles */
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Hello, I'm [Your Name]</h1>
+        <p class="lead">Welcome to my portfolio! I specialize in [Your Specialization].</p>
+    </header>
+
+    <section id="about" class="container text-center">
+        <h2>About Me</h2>
+        <p>[A brief description about yourself]</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card" data-toggle="modal" data-target="#project1Modal">
+                    <!-- <img class="card-img-top" alt="TaxBandits 1099/W2 Project"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">TaxBandits 1099/W2</h5>
+                        <h6>Nov 2023 – Present</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card" data-toggle="modal" data-target="#project2Modal">
+                    <!-- <img src="project2.jpg" class="card-img-top" alt="TaxBandits W-9 Project"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">TaxBandits W-9</h5>
+                        <h6>Nov 2022 – Jan 2024</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card" data-toggle="modal" data-target="#project3Modal">
+                    <!-- <img src="project3.jpg" class="card-img-top" alt="TaxBandits Public API Project"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">TaxBandits Public API</h5>
+                        <h6>Mar 2021 – Jan 2024</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for project details -->
+
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project1ModalLabel">TaxBandits 1099/W2</h5> 
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              • Developed 50+ automated test scripts for form preparation, submission, and recipient management functionalities.<br>
+              • Evaluated user interfaces for 1099 and W-2 forms on 10+ devices and browsers.<br>
+              • Verified the functionality of electronic filing processes, achieving 100% successful submissions.<br>
+              • Ensured proper integration with IRS e-filing systems and other TaxBandits services, leading to 95% fewer
+                integration-related issues
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project2ModalLabel">TaxBandits W-9</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              • Designed and executed over 40 test cases for the creation, submission, and management of W-9 forms.<br>
+              • Tested UI across 5 major browsers & 3 devices, enhancing form completion ease.<br>
+              • Verified integration with 3 TaxBandits services, ensuring seamless data flow and accuracy.<br>
+              • Identified and documented 15 bugs or inconsistencies in form submission and management processes,
+                leading to a 25% reduction in reported issues
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 3 -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project3ModalLabel">TaxBandits Public API</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              • Developed 50+ test cases for API endpoints, ensuring 98% functional accuracy.<br>
+              • Reviewed and updated API documentation, improving clarity in 100+ revisions.<br>
+              • Tested integration with 5 third-party systems, ensuring a 99% success rate in data transfer.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
